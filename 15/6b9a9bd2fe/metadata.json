@@ -1,0 +1,44 @@
+{
+  "cli_version": "0.4.5",
+  "checkpoint_id": "156b9a9bd2fe",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".gitignore",
+    "CLAUDE.md",
+    "README.md",
+    "gradle.properties",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/http/FilePositionRestService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/http/IdeStatusRestService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/listeners/CaretPositionListener.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/listeners/FileEditorListener.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/listeners/FileOpenedListener.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/listeners/SelectionPositionListener.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/listeners/WindowFocusListener.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/services/FilePositionStateService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/services/IdeDiscoveryService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/services/MyProjectService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/services/SyncSettingsService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/services/VsCodePollingService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/startup/MyProjectActivity.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/toolWindow/MyToolWindowFactory.kt",
+    "src/main/resources/META-INF/plugin.xml"
+  ],
+  "sessions": [
+    {
+      "metadata": "/15/6b9a9bd2fe/0/metadata.json",
+      "transcript": "/15/6b9a9bd2fe/0/full.jsonl",
+      "context": "/15/6b9a9bd2fe/0/context.md",
+      "content_hash": "/15/6b9a9bd2fe/0/content_hash.txt",
+      "prompt": "/15/6b9a9bd2fe/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 158,
+    "cache_creation_tokens": 342357,
+    "cache_read_tokens": 4651080,
+    "output_tokens": 16610,
+    "api_call_count": 83
+  }
+}
