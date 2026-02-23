@@ -1,0 +1,34 @@
+{
+  "cli_version": "0.4.5",
+  "checkpoint_id": "a301831a3adb",
+  "session_id": "6c9704c1-c956-462e-bad8-6426135f5e20",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-23T12:06:25.609358Z",
+  "branch": "main",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "vscode/jetcodesync/src/extension.ts",
+    "vscode/jetcodesync/package.json",
+    "vscode/jetcodesync/src/webview.ts",
+    "vscode/jetcodesync/README.md"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "7006d2007210",
+  "token_usage": {
+    "input_tokens": 157,
+    "cache_creation_tokens": 341642,
+    "cache_read_tokens": 4542752,
+    "output_tokens": 16608,
+    "api_call_count": 82
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-23T12:06:25.347937Z",
+    "agent_lines": 958,
+    "human_added": 3429,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 4387,
+    "agent_percentage": 21.83724640984728
+  },
+  "transcript_path": ".claude/projects/-Users-aminakov-code-jetcodesync-vscode/6c9704c1-c956-462e-bad8-6426135f5e20.jsonl"
+}
