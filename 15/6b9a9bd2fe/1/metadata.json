@@ -1,0 +1,49 @@
+{
+  "cli_version": "0.4.5",
+  "checkpoint_id": "156b9a9bd2fe",
+  "session_id": "b6203de3-c71f-4645-837a-6350b30a918e",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-23T12:07:53.054958Z",
+  "branch": "main",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "README.md",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/listeners/FileOpenedListener.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/listeners/SelectionPositionListener.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/services/IdeDiscoveryService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/services/VsCodePollingService.kt",
+    "src/main/resources/META-INF/plugin.xml",
+    "CLAUDE.md",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/http/FilePositionRestService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/http/IdeStatusRestService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/listeners/CaretPositionListener.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/listeners/WindowFocusListener.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/services/MyProjectService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/services/SyncSettingsService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/toolWindow/MyToolWindowFactory.kt",
+    ".gitignore",
+    "gradle.properties",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/listeners/FileEditorListener.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/services/FilePositionStateService.kt",
+    "src/main/kotlin/com/github/sintezcs/jetcodesync/startup/MyProjectActivity.kt"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "62fb1e80c1db",
+  "token_usage": {
+    "input_tokens": 228,
+    "cache_creation_tokens": 360899,
+    "cache_read_tokens": 11625482,
+    "output_tokens": 26008,
+    "api_call_count": 130
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-23T12:07:52.66855Z",
+    "agent_lines": 0,
+    "human_added": 987,
+    "human_modified": 67,
+    "human_removed": 0,
+    "total_committed": 987,
+    "agent_percentage": 0
+  },
+  "transcript_path": ".claude/projects/-Users-aminakov-code-jetcodesync/b6203de3-c71f-4645-837a-6350b30a918e.jsonl"
+}
