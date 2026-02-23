@@ -1,0 +1,72 @@
+{
+  "name": "jetcodesync",
+  "displayName": "JetCodeSync",
+  "description": "Sync your current open file and caret position between IDEs",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jetcodesync.start",
+        "title": "JetCodeSync: Start Syncing"
+      },
+      {
+        "command": "jetcodesync.stop",
+        "title": "JetCodeSync: Stop Syncing"
+      },
+      {
+        "command": "jetcodesync.rescan",
+        "title": "JetCodeSync: Rescan for IDEs"
+      },
+      {
+        "command": "jetcodesync.openPanel",
+        "title": "JetCodeSync: Open Settings Panel"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "jetcodesync",
+          "title": "JetCodeSync",
+          "icon": "$(sync)"
+        }
+      ]
+    },
+    "views": {
+      "jetcodesync": [
+        {
+          "type": "webview",
+          "id": "jetcodesync.configPanel",
+          "name": "Settings"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.105.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.54.0",
+    "eslint": "^9.39.2",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
