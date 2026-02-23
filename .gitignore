@@ -5,3 +5,5 @@
 .kotlin
 .qodana
 build
+/vscode/jetcodesync/node_modules/
+/vscode/jetcodesync/out/

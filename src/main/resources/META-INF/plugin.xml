@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.sintezcs.jetcodesync</id>
-    <name>jetcodesync</name>
+    <name>JetCodeSync</name>
     <vendor>sintezcs</vendor>
 
     <depends>com.intellij.modules.platform</depends>
@@ -9,7 +9,23 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.sintezcs.jetcodesync.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="com.github.sintezcs.jetcodesync.toolWindow.MyToolWindowFactory" id="JetCodeSync" anchor="right"/>
         <postStartupActivity implementation="com.github.sintezcs.jetcodesync.startup.MyProjectActivity" />
+
+        <!-- File Position Tracking Components -->
+        <httpRequestHandler implementation="com.github.sintezcs.jetcodesync.http.FilePositionRestService"/>
+        <httpRequestHandler implementation="com.github.sintezcs.jetcodesync.http.IdeStatusRestService"/>
+        <postStartupActivity implementation="com.github.sintezcs.jetcodesync.listeners.FileEditorListener"/>
+<!--        <postStartupActivity implementation="com.github.sintezcs.jetcodesync.listeners.CaretPositionListener"/>-->
     </extensions>
+    <applicationListeners>
+        <listener
+                class="com.github.sintezcs.jetcodesync.listeners.FileOpenedListener"
+                topic="com.intellij.openapi.fileEditor.FileOpenedSyncListener"
+        />
+        <listener
+                class="com.github.sintezcs.jetcodesync.listeners.WindowFocusListener"
+                topic="com.intellij.openapi.application.ApplicationActivationListener"
+        />
+    </applicationListeners>
 </idea-plugin>
