@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(tree:*)",
+      "WebSearch",
+      "WebFetch(domain:plugins.jetbrains.com)",
+      "WebFetch(domain:www.plugin-dev.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(./gradlew build:*)",
+      "Bash(curl:*)",
+      "Bash(unzip:*)",
+      "Bash(./gradlew clean:*)",
+      "Bash(for port in 63340 63341 63342 63343)",
+      "Bash(do echo \"Testing port $port:\")",
+      "Bash(done)",
+      "Bash(./gradlew prepareSandbox:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(./gradlew compileKotlin:*)",
+      "Bash(./gradlew buildPlugin:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}
